@@ -1,1 +1,223 @@
-const _0x2b759c=_0x3c24;(function(_0x173fe8,_0x5cff97){const _0x4f3c98=_0x3c24,_0x2fd2ad=_0x173fe8();while(!![]){try{const _0x504d27=parseInt(_0x4f3c98(0x1a9))/0x1+-parseInt(_0x4f3c98(0x197))/0x2*(-parseInt(_0x4f3c98(0x188))/0x3)+parseInt(_0x4f3c98(0x1be))/0x4*(-parseInt(_0x4f3c98(0x1a4))/0x5)+-parseInt(_0x4f3c98(0x1af))/0x6+parseInt(_0x4f3c98(0x19d))/0x7*(-parseInt(_0x4f3c98(0x192))/0x8)+parseInt(_0x4f3c98(0x1b1))/0x9+-parseInt(_0x4f3c98(0x1c0))/0xa;if(_0x504d27===_0x5cff97)break;else _0x2fd2ad['push'](_0x2fd2ad['shift']());}catch(_0x45cf83){_0x2fd2ad['push'](_0x2fd2ad['shift']());}}}(_0x5411,0x4f2cf));const fs=require('fs'),express=require(_0x2b759c(0x1b8)),bodyParser=require(_0x2b759c(0x1c9)),login=require(_0x2b759c(0x19b)),app=express();app['use'](bodyParser[_0x2b759c(0x1a5)]({'extended':!![]}));function _0x3c24(_0x1854aa,_0x2192ee){const _0x5411b1=_0x5411();return _0x3c24=function(_0x3c248d,_0x351e3a){_0x3c248d=_0x3c248d-0x188;let _0xdd3701=_0x5411b1[_0x3c248d];return _0xdd3701;},_0x3c24(_0x1854aa,_0x2192ee);}let botConfig={};app[_0x2b759c(0x1bd)]('/',(_0x3c4ab5,_0x36dd9c)=>{const _0x2d462d=_0x2b759c;_0x36dd9c[_0x2d462d(0x1c4)]('\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20<!DOCTYPE\x20html>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20<html\x20lang=\x22en\x22>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20<head>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20charset=\x22UTF-8\x22>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20name=\x22viewport\x22\x20content=\x22width=device-width,\x20initial-scale=1.0\x22>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<title>Messenger\x20Bot\x20Configuration</title>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<style>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20body\x20{\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-family:\x20Arial,\x20sans-serif;\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#f4f4f9;\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#333;\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x200;\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x200;\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20center;\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20align-items:\x20center;\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100vh;\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.container\x20{\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20#fff;\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2020px;\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x208px;\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20box-shadow:\x200\x204px\x206px\x20rgba(0,\x200,\x200,\x200.1);\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x2090%;\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20500px;\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-align:\x20center;\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20h1\x20{\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2024px;\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-bottom:\x2020px;\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20label\x20{\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20bold;\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20input,\x20textarea,\x20button\x20{\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x2010px\x200;\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2010px;\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2016px;\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x201px\x20solid\x20#ccc;\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x204px;\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20button\x20{\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#4CAF50;\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20white;\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x20none;\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20button:hover\x20{\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#45a049;\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.whatsapp-button\x20{\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#25D366;\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20white;\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x2010px;\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.whatsapp-button:hover\x20{\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#1EBE5D;\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</style>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20</head>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20<body>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22container\x22>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h1>Messenger\x20Group\x20Name\x20Lock</h1>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h2>Owner:\x20Mian\x20Amir</h2>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<form\x20method=\x22POST\x22\x20action=\x22/configure\x22>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<label\x20for=\x22adminID\x22>Admin\x20ID:</label>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20type=\x22text\x22\x20id=\x22adminID\x22\x20name=\x22adminID\x22\x20placeholder=\x22Enter\x20your\x20Admin\x20ID\x22\x20required>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<label\x20for=\x22prefix\x22>Command\x20Prefix:</label>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20type=\x22text\x22\x20id=\x22prefix\x22\x20name=\x22prefix\x22\x20value=\x22.\x22\x20placeholder=\x22Enter\x20command\x20prefix\x22\x20required>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<label\x20for=\x22appstate\x22>Appstate\x20(Paste\x20JSON):</label>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<textarea\x20id=\x22appstate\x22\x20name=\x22appstate\x22\x20rows=\x2210\x22\x20placeholder=\x22Paste\x20your\x20Appstate\x20JSON\x20here\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x0aBot\x20start\x20krny\x20k\x20bad\x20group\x20mai\x20add\x20kro\x20bot\x20id\x20aur\x20command\x20likho\x20group\x20mai\x20.grouplockname\x20on\x20(New\x20Name)\x22\x20required></textarea>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20type=\x22submit\x22>Start\x20Bot</button>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</form>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22whatsapp-button\x22\x20onclick=\x22location.href=\x27https://wa.me/923114397148?text=Hello+Mian+Amir+Sir+Group+Name+Kyse+Lock+Hoga?%3F\x27\x22>How\x20to\x20Use</button>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20</body>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20</html>\x0a\x0a\x20\x20\x20\x20');}),app['post']('/configure',(_0x1c279a,_0x8be09)=>{const _0x230383=_0x2b759c,{adminID:_0x311f60,prefix:_0x1cd5e1,appstate:_0x293c83}=_0x1c279a[_0x230383(0x191)];botConfig={'adminID':_0x311f60,'prefix':_0x1cd5e1},fs['writeFileSync'](_0x230383(0x1c7),_0x293c83),_0x8be09[_0x230383(0x1c4)](_0x230383(0x1a3)),startBot();});function startBot(){const _0xaeeda3=_0x2b759c;let _0x486243;try{_0x486243=JSON[_0xaeeda3(0x189)](fs[_0xaeeda3(0x1bb)](_0xaeeda3(0x1c7),_0xaeeda3(0x1b3)));}catch(_0x2dd81d){console[_0xaeeda3(0x1c5)](_0xaeeda3(0x199));return;}login({'appState':_0x486243},(_0x490b44,_0x3afefa)=>{const _0x3a4b07=_0xaeeda3;if(_0x490b44){console[_0x3a4b07(0x1c5)](_0x3a4b07(0x19a),_0x490b44);return;}console[_0x3a4b07(0x1bc)](_0x3a4b07(0x1ae)),_0x3afefa[_0x3a4b07(0x1ac)]({'listenEvents':!![]});const _0x3786a9={},_0x579f19={},_0x4c2d30={};_0x3afefa[_0x3a4b07(0x1a6)]((_0x43c17c,_0x5f12d1)=>{const _0x32599b=_0x3a4b07;if(_0x43c17c)return console[_0x32599b(0x1c5)](_0x43c17c);if(_0x5f12d1[_0x32599b(0x18e)]===_0x32599b(0x19e)&&_0x5f12d1['body'][_0x32599b(0x1b2)](botConfig[_0x32599b(0x1b7)])){const _0x55de5e=_0x5f12d1[_0x32599b(0x18b)],_0x5a882d=_0x5f12d1[_0x32599b(0x191)][_0x32599b(0x190)](botConfig['prefix'][_0x32599b(0x1aa)])[_0x32599b(0x1ba)]()[_0x32599b(0x1c8)]('\x20'),_0x511cd0=_0x5a882d[0x0][_0x32599b(0x1c3)](),_0x588583=_0x5a882d[_0x32599b(0x190)](0x2)['join']('\x20');if(_0x55de5e!==botConfig[_0x32599b(0x1c2)])return _0x3afefa['sendMessage'](_0x32599b(0x18a),_0x5f12d1['threadID']);if(_0x511cd0==='grouplockname'&&_0x5a882d[0x1]==='on')_0x3786a9[_0x5f12d1[_0x32599b(0x195)]]=_0x588583,_0x3afefa[_0x32599b(0x1a0)](_0x588583,_0x5f12d1['threadID'],_0xf48dfa=>{const _0x275872=_0x32599b;if(_0xf48dfa)return _0x3afefa[_0x275872(0x1a1)](_0x275872(0x1a8),_0x5f12d1[_0x275872(0x195)]);_0x3afefa['sendMessage']('âœ…\x20Group\x20name\x20locked\x20as:\x20'+_0x588583,_0x5f12d1[_0x275872(0x195)]);});else{if(_0x511cd0===_0x32599b(0x193)&&_0x5a882d[0x1]==='on'){const _0x3880c8=_0x588583;_0x3afefa[_0x32599b(0x196)](_0x5f12d1[_0x32599b(0x195)],(_0x4be923,_0x4161d0)=>{const _0x4a0ba8=_0x32599b;if(_0x4be923)return console[_0x4a0ba8(0x1c5)](_0x4be923);const _0x266e4a=0x7d0;_0x4161d0[_0x4a0ba8(0x1a7)]['forEach']((_0x2dcef8,_0x17a66b)=>{setTimeout(()=>{const _0x29f92e=_0x3c24;_0x3afefa['changeNickname'](_0x3880c8,_0x5f12d1[_0x29f92e(0x195)],_0x2dcef8,_0x554a0a=>{const _0x3daf3f=_0x29f92e;if(_0x554a0a)console[_0x3daf3f(0x1c5)](_0x3daf3f(0x1ad)+_0x2dcef8);});},_0x17a66b*_0x266e4a);}),_0x579f19[_0x5f12d1[_0x4a0ba8(0x195)]]=_0x3880c8,_0x3afefa['sendMessage']('âœ…\x20Nicknames\x20locked\x20as:\x20'+_0x3880c8,_0x5f12d1[_0x4a0ba8(0x195)]);});}else{if(_0x511cd0===_0x32599b(0x18c)&&_0x5a882d[0x1]==='on')_0x4c2d30[_0x5f12d1[_0x32599b(0x195)]]=_0x588583,_0x3afefa[_0x32599b(0x198)](_0x588583,_0x5f12d1[_0x32599b(0x195)],_0x914fde=>{const _0x9d047=_0x32599b;if(_0x914fde)return _0x3afefa[_0x9d047(0x1a1)](_0x9d047(0x1b9),_0x5f12d1[_0x9d047(0x195)]);_0x3afefa[_0x9d047(0x1a1)](_0x9d047(0x18f)+_0x588583,_0x5f12d1['threadID']);});else{if(_0x511cd0===_0x32599b(0x1ab)){const _0x4d1336=_0x32599b(0x194)+(_0x3786a9[_0x5f12d1[_0x32599b(0x195)]]||_0x32599b(0x1c1))+_0x32599b(0x1b5)+(_0x579f19[_0x5f12d1[_0x32599b(0x195)]]||'Not\x20locked')+'\x0aEmoji:\x20'+(_0x4c2d30[_0x5f12d1[_0x32599b(0x195)]]||_0x32599b(0x1c1));_0x3afefa[_0x32599b(0x1a1)](_0x4d1336,_0x5f12d1[_0x32599b(0x195)]);}}}}}if(_0x5f12d1['logMessageType']===_0x32599b(0x1c6)){const _0x18f521=_0x3786a9[_0x5f12d1['threadID']];_0x18f521&&_0x3afefa['setTitle'](_0x18f521,_0x5f12d1[_0x32599b(0x195)],_0x4d9154=>{const _0x470381=_0x32599b;if(!_0x4d9154)_0x3afefa[_0x470381(0x1a1)](_0x470381(0x1a2),_0x5f12d1['threadID']);});}if(_0x5f12d1[_0x32599b(0x19c)]===_0x32599b(0x1b0)){const _0x4fa71c=_0x579f19[_0x5f12d1[_0x32599b(0x195)]];if(_0x4fa71c){const _0x377757=_0x5f12d1['logMessageData']['participant_id'];_0x3afefa[_0x32599b(0x1b4)](_0x4fa71c,_0x5f12d1[_0x32599b(0x195)],_0x377757,_0x47a0d0=>{const _0x240616=_0x32599b;if(!_0x47a0d0)_0x3afefa['sendMessage']('â\u009dŒ\x20Nickname\x20change\x20reverted.',_0x5f12d1[_0x240616(0x195)]);});}}if(_0x5f12d1['logMessageType']===_0x32599b(0x1b6)){const _0x385247=_0x4c2d30[_0x5f12d1['threadID']];_0x385247&&_0x3afefa[_0x32599b(0x198)](_0x385247,_0x5f12d1['threadID'],_0x5d8ffa=>{const _0x547a44=_0x32599b;if(!_0x5d8ffa)_0x3afefa[_0x547a44(0x1a1)](_0x547a44(0x18d),_0x5f12d1['threadID']);});}});});}app[_0x2b759c(0x19f)](0xbb8,()=>{const _0x366cfa=_0x2b759c;console[_0x366cfa(0x1bc)](_0x366cfa(0x1bf));});function _0x5411(){const _0x27a214=['48uepZAw','ðŸŒ\u0090\x20Server\x20is\x20running\x20on\x20http://localhost:3000','1309720MFmRtm','Not\x20locked','adminID','toLowerCase','send','error','log:thread-name','appstate.json','split','body-parser','6BvydNZ','parse','â\u009dŒ\x20You\x20are\x20not\x20authorized\x20to\x20use\x20this\x20command.','senderID','grouplockemoji','â\u009dŒ\x20Group\x20emoji\x20change\x20reverted.','type','âœ…\x20Group\x20emoji\x20locked\x20as:\x20','slice','body','32744dYWcia','nicknamelock','ðŸ”’\x20Lock\x20Status:\x0aGroup\x20Name:\x20','threadID','getThreadInfo','332806WbPWoR','changeThreadEmoji','â\u009dŒ\x20Invalid\x20appstate.json\x20file.','â\u009dŒ\x20Login\x20failed:','fca-priyansh','logMessageType','371ilRcsC','message','listen','setTitle','sendMessage','â\u009dŒ\x20Group\x20name\x20change\x20reverted.','<h1>Bot\x20is\x20starting...</h1><p>Go\x20back\x20to\x20the\x20Replit\x20console\x20to\x20see\x20logs.</p>','15600lXPlDU','urlencoded','listenMqtt','participantIDs','â\u009dŒ\x20Failed\x20to\x20lock\x20group\x20name.','39480xsWOfV','length','lockstatus','setOptions','â\u009dŒ\x20Failed\x20to\x20set\x20nickname\x20for\x20user\x20','âœ…\x20Bot\x20is\x20running...','1514088tvhXPs','log:thread-nickname','5307354bmdHhw','startsWith','utf8','changeNickname','\x0aNicknames:\x20','log:thread-icon','prefix','express','â\u009dŒ\x20Failed\x20to\x20lock\x20group\x20emoji.','trim','readFileSync','log','get'];_0x5411=function(){return _0x27a214;};return _0x5411();}
+const fs = require('fs');
+const express = require('express');
+const bodyParser = require('body-parser');
+const login = require('fca-priyansh');
+
+const app = express();
+app.use(bodyParser.urlencoded({ extended: true }));
+
+let botConfig = {}; // To store adminID, prefix, etc.
+
+// Serve the HTML Form
+app.get('/', (req, res) => {
+    res.send(`
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Messenger Bot Configuration</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    background-color: #f4f4f9;
+                    color: #333;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100vh;
+                }
+                .container {
+                    background: #fff;
+                    padding: 20px;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    width: 90%;
+                    max-width: 500px;
+                    text-align: center;
+                }
+                h1 {
+                    font-size: 24px;
+                    margin-bottom: 20px;
+                }
+                label {
+                    font-weight: bold;
+                }
+                input, textarea, button {
+                    width: 100%;
+                    margin: 10px 0;
+                    padding: 10px;
+                    font-size: 16px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                }
+                button {
+                    background-color: #4CAF50;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                }
+                button:hover {
+                    background-color: #45a049;
+                }
+                .whatsapp-button {
+                    background-color: #25D366;
+                    color: white;
+                    margin-top: 10px;
+                }
+                .whatsapp-button:hover {
+                    background-color: #1EBE5D;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1>Messenger Group Name Lock</h1>
+                <h2>Owner: Mian Amir</h2>
+                <form method="POST" action="/configure">
+                    <label for="adminID">Admin ID:</label>
+                    <input type="text" id="adminID" name="adminID" placeholder="Enter your Admin ID" required>
+
+                    <label for="prefix">Command Prefix:</label>
+                    <input type="text" id="prefix" name="prefix" value="." placeholder="Enter command prefix" required>
+
+                    <label for="appstate">Appstate (Paste JSON):</label>
+                    <textarea id="appstate" name="appstate" rows="10" placeholder="Paste your Appstate JSON here
+                    
+Bot start krny k bad group mai add kro bot id aur command likho group mai .grouplockname on (New Name)" required></textarea>
+
+                    <button type="submit">Start Bot</button>
+                </form>
+                <button class="whatsapp-button" onclick="location.href='https://wa.me/923114397148?text=Hello+Mian+Amir+Sir+Group+Name+Kyse+Lock+Hoga?%3F'">How to Use</button>
+            </div>
+        </body>
+        </html>
+    `);
+});
+
+// Handle Configuration Form Submission
+app.post('/configure', (req, res) => {
+    const { adminID, prefix, appstate } = req.body;
+
+    // Save Configuration
+    botConfig = { adminID, prefix };
+    fs.writeFileSync('appstate.json', appstate);
+
+    res.send('<h1>Bot is starting...</h1><p>Go back to the Replit console to see logs.</p>');
+
+    startBot(); // Start the bot after configuration
+});
+
+// Start the Bot
+function startBot() {
+    let appState;
+    try {
+        appState = JSON.parse(fs.readFileSync('appstate.json', 'utf8'));
+    } catch (err) {
+        console.error('❌ Invalid appstate.json file.');
+        return;
+    }
+
+    login({ appState }, (err, api) => {
+        if (err) {
+            console.error('❌ Login failed:', err);
+            return;
+        }
+
+        console.log('✅ Bot is running...');
+        api.setOptions({ listenEvents: true });
+
+        const lockedGroups = {};
+        const lockedNicknames = {};
+        const lockedEmojis = {};
+
+        api.listenMqtt((err, event) => {
+            if (err) return console.error(err);
+
+            if (event.type === 'message' && event.body.startsWith(botConfig.prefix)) {
+                const senderID = event.senderID;
+                const args = event.body.slice(botConfig.prefix.length).trim().split(' ');
+                const command = args[0].toLowerCase();
+                const lockValue = args.slice(2).join(' ');
+
+                if (senderID !== botConfig.adminID) {
+                    return api.sendMessage('❌ You are not authorized to use this command.', event.threadID);
+                }
+
+                if (command === 'grouplockname' && args[1] === 'on') {
+                    lockedGroups[event.threadID] = lockValue;
+                    api.setTitle(lockValue, event.threadID, (err) => {
+                        if (err) return api.sendMessage('❌ Failed to lock group name.', event.threadID);
+                        api.sendMessage(`✅ Group name locked as: ${lockValue}`, event.threadID);
+                    });
+                } else if (command === 'nicknamelock' && args[1] === 'on') {
+                    const nickname = lockValue;
+
+                    api.getThreadInfo(event.threadID, (err, info) => {
+                        if (err) return console.error(err);
+
+                        const delay = 2000;
+                        info.participantIDs.forEach((userID, index) => {
+                            setTimeout(() => {
+                                api.changeNickname(nickname, event.threadID, userID, (err) => {
+                                    if (err) console.error(`❌ Failed to set nickname for user ${userID}`);
+                                });
+                            }, index * delay);
+                        });
+
+                        lockedNicknames[event.threadID] = nickname;
+                        api.sendMessage(`✅ Nicknames locked as: ${nickname}`, event.threadID);
+                    });
+                } else if (command === 'grouplockemoji' && args[1] === 'on') {
+                    lockedEmojis[event.threadID] = lockValue;
+                    api.changeThreadEmoji(lockValue, event.threadID, (err) => {
+                        if (err) return api.sendMessage('❌ Failed to lock group emoji.', event.threadID);
+                        api.sendMessage(`✅ Group emoji locked as: ${lockValue}`, event.threadID);
+                    });
+                } else if (command === 'lockstatus') {
+                    const lockStatus = `🔒 Lock Status:\nGroup Name: ${
+                        lockedGroups[event.threadID] || 'Not locked'
+                    }\nNicknames: ${lockedNicknames[event.threadID] || 'Not locked'}\nEmoji: ${
+                        lockedEmojis[event.threadID] || 'Not locked'
+                    }`;
+                    api.sendMessage(lockStatus, event.threadID);
+                }
+            }
+
+            if (event.logMessageType === 'log:thread-name') {
+                const lockedName = lockedGroups[event.threadID];
+                if (lockedName) {
+                    api.setTitle(lockedName, event.threadID, (err) => {
+                        if (!err) api.sendMessage('❌ Group name change reverted.', event.threadID);
+                    });
+                }
+            }
+
+            if (event.logMessageType === 'log:thread-nickname') {
+                const lockedNickname = lockedNicknames[event.threadID];
+                if (lockedNickname) {
+                    const affectedUserID = event.logMessageData.participant_id;
+                    api.changeNickname(lockedNickname, event.threadID, affectedUserID, (err) => {
+                        if (!err) api.sendMessage('❌ Nickname change reverted.', event.threadID);
+                    });
+                }
+            }
+
+            if (event.logMessageType === 'log:thread-icon') {
+                const lockedEmoji = lockedEmojis[event.threadID];
+                if (lockedEmoji) {
+                    api.changeThreadEmoji(lockedEmoji, event.threadID, (err) => {
+                        if (!err) api.sendMessage('❌ Group emoji change reverted.', event.threadID);
+                    });
+                }
+            }
+        });
+    });
+}
+
+// Start Express Server
+app.listen(3000, () => {
+    console.log('🌐 Server is running on http://localhost:3000');
+});
