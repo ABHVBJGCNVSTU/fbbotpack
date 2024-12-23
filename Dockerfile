@@ -20,4 +20,4 @@ COPY . .
 EXPOSE 3000
 
 # Start the app
-CMD ["node", "bot.js"]
+CMD ["node", "index.js"]
