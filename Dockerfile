@@ -1,23 +1,20 @@
 # Base image
-FROM node:16-alpine
+FROM node:18
 
-# Working directory
-WORKDIR /usr/src/app
+# Set the working directory inside the container
+WORKDIR /app
 
-# Copy package files
+# Copy package.json and package-lock.json to the working directory
 COPY package*.json ./
 
-# Fix network issues for npm
-RUN npm config set registry https://registry.npmjs.org/
-
 # Install dependencies
-RUN index.js
+RUN npm install
 
-# Copy source code
+# Copy the rest of the application code to the container
 COPY . .
 
-# Expose port
+# Expose the port your application will run on
 EXPOSE 3000
 
-# Start the app
-CMD ["node", "index.js"]
+# Command to run the bot
+CMD ["npm", "start"]
